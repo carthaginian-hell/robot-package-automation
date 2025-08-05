@@ -30,6 +30,7 @@ print(result)  # expected "STANDARD"
 
 ### Install the package in development mode
 
+Make sure you are in the package folder containing `src` and `tests` directories, then run:
 ```bash
 pip install -e .[dev]
 ```
