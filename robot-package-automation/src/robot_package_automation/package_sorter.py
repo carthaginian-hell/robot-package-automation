@@ -18,11 +18,6 @@ def sort(width: float, height: float, length: float, mass: float) -> str:
     Raises:
         ValueError: If any input is zero or negative
     """
-    # Validate inputs
-    for value in [width, height, length, mass]:
-        if value <= 0:
-            raise ValueError("All measurements must be positive numbers")
-
     # Check if package is bulky
     volume = width * height * length
     is_bulky = volume >= 1_000_000 or max(width, height, length) >= 150
